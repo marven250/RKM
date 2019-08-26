@@ -1,11 +1,8 @@
 nav{
     width: 100%;
     /* background-color: #696464; */
-    background-color: #fb929e;
+    background-color: #2a3132;
     height: 115px;
-}
-#navRight{
-
 }
 
 #links{
@@ -18,7 +15,6 @@ nav{
 #navLeft{
     display: flex;;
     color: white;
-    opacity: 0.8;
     justify-content: center;
 }
 
@@ -73,10 +69,11 @@ nav{
 }*/
 p{
     font-family: cursive;
-    font-size: 1.5em
+    font-size: 1.5em;
+    color:white;
 }
 #section1{
-    background-color:  #ffdfdf;
+    background-color:  #2a3132;
     width: 550px;
 }
 #section2{
@@ -85,18 +82,22 @@ p{
     transition: all .8s;
 }
 
-#title{
-    
+button:hover{
+transform: scale(1.5);
+color: #2a3132;
 }
 button{
     border: none;
-    padding: 100px;
+    padding: 50px;
     background-color: #fff6f6;
+    position: absolute;
+    transition: all 1s;
     
 }
 .pic-box{
     display: flex;
     justify-content: flex-start;
+    transition: all 0.8s;
 } 
 #log{
     object-fit: contain;
@@ -109,4 +110,12 @@ button{
 }
 #footpic3{
     position: relative;
+}
+.carousel-item{
+    object-fit: contain;
+}
+
+
+.inView{ 
+    transform: translate(200px)
 }
