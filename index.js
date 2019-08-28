@@ -8,6 +8,22 @@ bookings.onclick= () => {
 
 }
 
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+document.getElementById("inspiration").onclick=()=>{
+  axios.get("http://quotes.stormconsultancy.co.uk/random.json").then((quotes)=>{
+  document.getElementById("qArea").innerHTML= "~" + quotes.data.quote
+  document.getElementById("inspiration").style.backgroundColor= getRandomColor();
+})
+}
+
  /*window.addEventListener("scroll", function (event) {
     var scroll = this.scrollY;
     console.log(scroll)
